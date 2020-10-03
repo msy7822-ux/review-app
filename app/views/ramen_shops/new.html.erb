@@ -1,0 +1,6 @@
+<%= form_for @ramen_shop, method: 'post' do |f| %>
+    <%= f.label :name, '共有したいラーメン店の名前' %>
+    <%= f.text_field :name, class: 'input', placeholder: '例：ラーメン二郎', style: 'width: 50%; margin-top: 30px;'%>
+
+    <%= f.submit '追加する', class: 'button', style: 'margin-top: 30px;' %>
+<% end %>
